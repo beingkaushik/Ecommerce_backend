@@ -15,17 +15,20 @@ ecommerce-backend
 ├── routes
 │ ├── productRoutes.js
 │ ├── categoryRoutes.js
-│ └── orderRoutes.js
+| ├── orderRoutes.js
+│ └── package.json
 │
 ├── controllers
 │ ├── productController.js
 │ ├── categoryController.js
-│ └── orderController.js
+| ├── orderController.js
+│ └── package.json
 │
 ├── data
 │ ├── products.js
 │ ├── categories.js
-│ └── orders.js
+| ├── orders.js
+│ └── package.json
 │
 └── package.json
 ```
@@ -160,3 +163,13 @@ Example request:
 
 
 POST http://localhost:5000/orders
+
+## ⚠️ Important Note
+
+This project uses in-memory storage.
+
+That means:
+
+-  Data will reset whenever the server restarts.
+
+-  This project is designed for learning REST API backend development.
